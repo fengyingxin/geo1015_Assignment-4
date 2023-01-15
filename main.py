@@ -7,7 +7,7 @@ from _4_inte import inte
 
 def set():
     parameter = {'crop':
-                     {'path_source': "file/pickked.las",
+                     {'path_source': "file/pickked.laz",
                       'path_target': "file/cropped.txt",
                       # 'x_min': 191050,
                       # 'x_max': 191250,

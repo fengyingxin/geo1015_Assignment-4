@@ -6,9 +6,9 @@ The codes are for TUD geo1015 2022-2023 assignment 4!
 
 Group 7:
 
-- Feng Yingxin(5692148)
-- Gong Sicong(5711932)
-- Rao Chengzhi(5841089)
+- Feng Yingxin (5692148)
+- Gong Sicong (5711932)
+- Rao Chengzhi (5841089)
 
 ### 3. Descriptions
 

@@ -1,0 +1,1 @@
+{"crop": {"path_source": "file/pickked.las", "path_target": "file/cropped.txt", "x_min": 190750, "x_max": 191250, "y_min": 351650, "y_max": 352150, "chunk_size": 100000}, "thin": {"grid_reso": [10], "thin_rate": [0.5]}, "filt": {"res_c": 2, "dis_e": -0.05, "eps_z": 0.05, "eps_g": 0.05, "times": 1000}, "inte": {"res_c": 0.5}}

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="362fa676-e069-4338-8d8c-e0aa747f1a72" name="Changes" comment="Add the sample point cloud!">
+    <list default="true" id="362fa676-e069-4338-8d8c-e0aa747f1a72" name="Changes" comment="Add a function to visualize scatter!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_3_filt.py" beforeDir="false" afterPath="$PROJECT_DIR$/_3_filt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,19 +32,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/GONGSICONG/Desktop/Assignment/geo1015_Assignment-4/figure/csf",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/GONGSICONG/Desktop/Assignment/geo1015_Assignment-4/figure/csf&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python._3_filt">
+}</component>
+  <component name="RunManager" selected="Python.test">
     <configuration name="_3_filt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="geo1015_Assignment-4" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,9 +113,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python._3_filt" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +130,8 @@
       <workItem from="1673740770990" duration="356000" />
       <workItem from="1673741140933" duration="292000" />
       <workItem from="1673741480062" duration="2291000" />
-      <workItem from="1673805756329" duration="2156000" />
+      <workItem from="1673805756329" duration="2255000" />
+      <workItem from="1673810902477" duration="910000" />
     </task>
     <task id="LOCAL-00001" summary="Initialization!">
       <created>1673740910509</created>
@@ -167,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673742551111</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add a function to visualize scatter!">
+      <created>1673807992183</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673807992183</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,10 +195,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialization!" />
     <MESSAGE value="Add the sample point cloud!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the sample point cloud!" />
+    <MESSAGE value="Add a function to visualize scatter!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a function to visualize scatter!" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/geo1015_Assignment_4$test.coverage" NAME="test Coverage Results" MODIFIED="1673742245873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/geo1015_Assignment_4$test.coverage" NAME="test Coverage Results" MODIFIED="1673811819436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/geo1015_Assignment_4$_3_filt.coverage" NAME="_3_filt Coverage Results" MODIFIED="1673807527454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/geo1015_Assignment_4$main.coverage" NAME="main Coverage Results" MODIFIED="1673806517426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

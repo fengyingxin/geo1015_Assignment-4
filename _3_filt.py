@@ -4,7 +4,7 @@ import time
 import json
 import numpy as np
 from scipy.spatial import KDTree
-
+import matplotlib.pyplot as plt
 
 class Vertex:
     def __init__(self, dis_e, x_ori, y_ori, z_min, z_cur, mobility=True):
@@ -82,6 +82,15 @@ class Cloth:
             if abs(vertex.z_cur - vertex.z_pre) > del_z:
                 del_z = abs(vertex.z_cur - vertex.z_pre)
         self.del_z = del_z
+
+def get_scatter(path_source,X,Y,Z):
+    plt.figure(figsize=(8, 6))
+    plt.scatter(x=X, y=Y, c=Z, s=0.1)
+    plt.colorbar()
+    plt.title(path_source)
+    plt.clim(-5, 40)
+    plt.axis("equal")
+    plt.show()
 
 
 # Get the data of point cloud
@@ -164,6 +173,10 @@ def output_ground(path_source, all_vertex, all_x_points, all_y_points, all_z_poi
     all_x_vertex = [vertex.x_ori for vertex in all_vertex]
     all_y_vertex = [vertex.y_ori for vertex in all_vertex]
     all_z_vertex = [vertex.z_cur for vertex in all_vertex]
+
+    get_scatter('cloth_{}'.format(path_source), all_x_vertex, all_y_vertex,all_z_vertex)
+
+
     all_z_points = [-z for z in all_z_points]
 
     kd_cloth = KDTree(np.vstack((all_x_vertex, all_y_vertex)).T)
@@ -171,12 +184,15 @@ def output_ground(path_source, all_vertex, all_x_points, all_y_points, all_z_poi
 
     with open('file/ground_{}'.format(path_source), 'w') as ofile:
         result = []
+        X,Y,Z = [],[],[]
         for point in points:
             x, y, z = point[0], point[1], point[2]
             index = kd_cloth.query([x, y], k=1)
             vertex_z = all_z_vertex[index[1]]
             if abs(z - vertex_z) < eps_g:
+                X.append(x),Y.append(y),Z.append(z)
                 result.append("{},{},{}".format(x, y, z))
+        get_scatter('ground_{}'.format(path_source), X, Y, Z)
         result = '\n'.join(result) + '\n'
         ofile.write(result)
     print('Ground done!')

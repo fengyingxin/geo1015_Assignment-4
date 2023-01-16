@@ -29,7 +29,15 @@ def init_image(x_min, x_max, y_min, y_max, res_c):
     result = np.zeros((row_num, col_num))
     return coor_x, coor_y, result
 
-
+def save_image_to_csv(coor_x,coor_y,result,path_source,res_c):
+    outfile=str(path_source+'.csv')
+    with open(outfile, 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['x', 'y', 'z'])
+        for row, y in enumerate(coor_y):
+            for col, x in enumerate(coor_x):
+                writer.writerow([x, y, result[row][col]])
+                
 def inte():
     # Open the parameter file
     with open('file/parameter.json', 'r') as pfile:
@@ -82,6 +90,8 @@ def inte():
 
         plt.show()
         print("Time cost is {:.3}s!".format(time.time() - start))
+        
+        save_image_to_csv(coor_x,coor_y,result,path_source,res_c)
 
 
 def main():
